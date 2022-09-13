@@ -1,7 +1,7 @@
 import '@/app.scss';
 import * as React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import TweenDemo from '@/components/TweenDemo';
+import ScrollDrive from './scroll-drive/ScrollDrive';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <h1>animations ex</h1>
       <BrowserRouter>
         <Routes>
-          <Route path="/tween" element={<TweenDemo />} />
+          <Route path="/scroll-drive" element={<ScrollDrive />} />
         </Routes>
       </BrowserRouter>
     </div>

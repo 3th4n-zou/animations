@@ -29,11 +29,19 @@ module.exports = {
         args: 'none',
       },
     ],
-    '@typescript-eslint/no-explicit-any': [
-      'error',
-      {
-        ignoreRestArgs: true,
-      },
+    // '@typescript-eslint/no-explicit-any': [
+    //   'error',
+    //   {
+    //     ignoreRestArgs: true,
+    //   },
+    // ],
+    '@typescript-eslint/no-explicit-any': ['off'],
+    '@typescript-eslint/variable-name': [
+      true,
+      'allow-leading-underscore',
+      'allow-pascal-case',
+      'allow-snake-case',
+      'allow-trailing-underscore',
     ],
     'max-len': [
       'warn',
@@ -66,4 +74,4 @@ module.exports = {
     'react/jsx-wrap-multilines': 'off',
     'react/destructuring-assignment': 'off',
   },
-}
+};
